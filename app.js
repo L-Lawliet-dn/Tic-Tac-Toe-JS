@@ -109,8 +109,6 @@ let board = [];
 let currentPlayer =  'X';
 let player1 = prompt("The name of \'X\' player: ");
 let player2 = prompt("The name of \'O\' player: ");
-// let player1 = 'a';
-// let player2 = 'b';
 currentWinner = player1;
 createBoard = () =>{
     for(let i = 0;i<3;i++)
@@ -136,6 +134,7 @@ createBoard = () =>{
                     alert(`The winner is ${currentWinner}`);
                     resetGame();
                     currentPlayer = 'X';
+                    currentWinner = player1;
                 }
                 if(!ans)
                     currentPlayer = currentPlayer==='X'?'O':'X';
