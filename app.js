@@ -107,10 +107,10 @@
 let row= document.querySelector(".row");
 let board = [];
 let currentPlayer =  'X';
-// let player1 = prompt("The name of \'X\' player: ");
-// let player2 = prompt("The name of \'O\' player: ");
-let player1 = 'a';
-let player2 = 'b';
+let player1 = prompt("The name of \'X\' player: ");
+let player2 = prompt("The name of \'O\' player: ");
+// let player1 = 'a';
+// let player2 = 'b';
 currentWinner = player1;
 createBoard = () =>{
     for(let i = 0;i<3;i++)
