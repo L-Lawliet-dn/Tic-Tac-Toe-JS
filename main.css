@@ -5,15 +5,25 @@
     height: 50px;
     margin-left: 50%;
     margin-top: 25%;
+    color: rgb(65, 106, 106);
 }
 .box{
 
-    border: 2px solid rgb(81, 209, 177);
-
+    border: 2px solid rgb(173, 83, 233);
     height: 50px;
     width: 50px;
+    transition: transform 0.2s;
+    background:transparent;
+    cursor: pointer;
+
 
 }
+.box:hover{
+    transform: scale(1.1);
 
-
- 
+}
+.box:focus {
+    background-color: rgb(173, 83, 233); /* Change background color on focus */
+    border-color: rgb(65, 106, 106); /* Change border color */
+    outline: none; /* Remove default focus outline */
+}
